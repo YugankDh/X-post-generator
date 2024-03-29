@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable = no">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- the main frame of the X post image -->
+    <div class="main-frame">
+        <div class="frame">
+            <div class="vertical-section-1">
+                <div class="profile-picture"></div>
+            </div>
+            <div class="vertical-section-2">
+                <div class="horizontal-section-1">
+                    <div class="username">
+                        Username
+                        <img src="verified.png" height="18px">
+                    </div>
+                    <div class="nametag">
+                        @tagname
+                    </div>
+                    <div class="option">
+                        <img src="options-vertical-svgrepo-com.png" height="18px">
+                    </div>
+                </div>
+                <div class="horizontal-section-2">
+                    <div class="text">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore dolores sapiente neque dolorem
+                        quas id beatae itaque debitis tempora ad!
+                    </div>
+                    <div class="post-hashtags">
+                        #hashtags #enter-hashtags
+                    </div>
+
+                    <div class="post-image"></div>
+                </div>
+                <div class="horizontal-section-3">
+                    <div class="reply">
+                        <img src="comment-1-svgrepo-com.png" height="18px">
+                        50k
+
+                    </div>
+                    <div class="retweet">
+                        <img src="retweet-svgrepo-com.png" height="18px">
+                        25
+                    </div>
+                    <div class="likes">
+                        <img src="heart-svgrepo-com.png" height="18px">
+                        12M
+                    </div>
+                    <div class="views">
+                        <img src="chart-simple-svgrepo-com.png" height="18px">
+                        50M
+                    </div>
+                    <div class="rest">
+                        <img src="bookmark-svgrepo-com.png" height="18px">
+                        <img src="share-svgrepo-com.png" height="18px">
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="vertical-section-3"></div>
+        </div>
+    </div>
+    <!-- the main frame of the user inputs -->
+    <div class="main-frame2">
+        <div class="title">X-post generator</div>
+
+        <div class="uploads">
+            <input id="pfp" type="file" accept="image/jpeg, image/png, image,jpg">
+            <label for="pfp">Upload profile-picture</label>
+
+            <input id="post" type="file" accept="image/jpeg, image/png, image,jpg">
+            <label for="post">upload post image(OPTIONAL!!!)</label>
+        </div>
+
+        <div class="textareas">
+            <textarea id="post-text" cols="10" rows="5" placeholder="Enter your Post Text here"></textarea>
+            <textarea id="post-tags" cols="10" rows="5" placeholder="Enter Your hastags here"></textarea>
+
+        </div>
+
+        <input type="text" class="name" placeholder="Username">
+
+        <input type="text" class="tag" placeholder="Tagname">
+
+        <input type="text" class="comments" placeholder="Number of comments">
+
+        <input type="text" id="retweets" placeholder="Number of retweets">
+
+        <input type="text" id="likes" placeholder="Number of likes">
+
+        <input type="text" id="views" placeholder="Number of views">
+
+        <button onclick="show()" class="gen">Preview</button>
+
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
